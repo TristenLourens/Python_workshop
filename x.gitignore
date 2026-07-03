@@ -1,1 +1,53 @@
+# Python
 
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+
+.venv/
+venv/
+env/
+
+# IDE
+
+.vscode/
+.idea/
+
+# Streamlit
+
+.streamlit/secrets.toml
+
+# Models
+
+models/*.pkl
+models/*.joblib
+
+# Data
+
+data/*.csv
+data/*.xlsx
+data/*.xls
+
+# Reports
+
+reports/*.pdf
+reports/*.html
+
+# Cache
+
+.cache/
+
+# OS
+
+.DS_Store
+Thumbs.db
+
+# Logs
+
+*.log
+
+# Jupyter
+
+.ipynb_checkpoints/
