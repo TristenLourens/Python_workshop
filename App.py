@@ -1,4 +1,37 @@
-"""
+from pathlib import Path
+import os
+
+# -------------------------------------------------------
+# Project Paths
+# -------------------------------------------------------
+
+ROOT = Path(__file__).parent
+
+FOLDERS = {
+    "assets": ROOT / "assets",
+    "config": ROOT / "config",
+    "core": ROOT / "core",
+    "pages": ROOT / "pages",
+    "models": ROOT / "models",
+    "reports": ROOT / "reports",
+    "data": ROOT / "data",
+    "streamlit": ROOT / ".streamlit",
+}
+
+# Create folders if they don't exist
+for folder in FOLDERS.values():
+    folder.mkdir(parents=True, exist_ok=True)
+
+# Optional shortcuts
+ASSETS = FOLDERS["assets"]
+CONFIG = FOLDERS["config"]
+CORE = FOLDERS["core"]
+PAGES = FOLDERS["pages"]
+MODELS = FOLDERS["models"]
+REPORTS = FOLDERS["reports"]
+DATA = FOLDERS["data"]
+STREAMLIT = FOLDERS["streamlit"]
+
 =========================================================
 DataPilot AI
 An Intelligent Machine Learning Workbench
